@@ -17,3 +17,4 @@ EXPOSE 80
 
 # Змінні середовища
 ENV ASPNETCORE_URLS=http://*:80
+COPY appsettings.json /app/appsettings.json
