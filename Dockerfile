@@ -1,5 +1,5 @@
 # Використовуємо офіційний образ Lampac
-FROM ghcr.io/immisterio/lampac:latest
+FROM immisterio/lampac:latest
 
 # Створюємо директорію для додаткових модулів
 RUN mkdir -p /app/modules
