@@ -1,10 +1,9 @@
-# Використовуємо готовий образ Lampac
-FROM immisterio/lampac:latest
+FROM imitsterio/lampac:latest
 
 # Встановлюємо робочу директорію
-WORKDIR /home
+WORKDIR /home/module
 
-# Копіюємо всі модулі з репозиторію в правильну директорію
+# Копіюємо всі модулі з репозиторіїв в правильну директорію
 COPY . /home/module/
 
 # Встановлюємо правильні дозволи
@@ -14,7 +13,7 @@ RUN chmod -R 755 /home/module/
 EXPOSE 80
 
 # Встановлюємо змінні середовища
-ENV ASPNETCORE_URLS=http://+:80
+ENV ASPNETCORE_URLS=http://*:80
 
 # Використовуємо стандартну команду запуску Lampac
 ENTRYPOINT ["dotnet", "Lampac.dll"]
