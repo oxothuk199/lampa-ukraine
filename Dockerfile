@@ -20,4 +20,5 @@ RUN chmod -R 755 /app/modules/
 EXPOSE 80
 
 # Змінні середовища
-ENV ASPNETCORE_URLS=http://*:80
+ENV ASPNETCORE_URLS=http://*:$PORT
+
