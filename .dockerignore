@@ -1,0 +1,22 @@
+# Git файли
+.git
+.gitignore
+
+# Документація
+README.md
+*.md
+
+# Логи та тимчасові файли
+*.log
+*.tmp
+*.temp
+
+# IDE файли
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системні файли
+.DS_Store
+Thumbs.db
