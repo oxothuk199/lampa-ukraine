@@ -6,7 +6,6 @@ RUN mkdir -p /app/modules
 
 # Копіюємо ваші модулі
 COPY AnimeON/ /app/modules/AnimeON/
-COPY Cikavadeya/ /app/modules/Cikavadeya/
 COPY Uaflix/ /app/modules/Uaflix/
 COPY Unimay/ /app/modules/Unimay/
 
