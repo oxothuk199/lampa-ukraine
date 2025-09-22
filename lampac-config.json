@@ -1,0 +1,9 @@
+{
+  "ModSecurity": false,
+  "serverproxy": {
+    "custom_modules_path": "/app/modules"
+  },
+  "online": {
+    "custom_sources": true
+  }
+}
