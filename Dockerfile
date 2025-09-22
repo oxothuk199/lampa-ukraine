@@ -2,8 +2,8 @@ FROM immisterio/lampac:northflank
 
 # Копіювання ваших модулів
 COPY AnimeON /app/modules/AnimeON
-COPY Cikavaldeya /app/modules/Cikavaldeya  
-COPY Уафликс /app/modules/Уафликс
+COPY CikavaIdeya /app/modules/CikavaIdeya  
+COPY Уафликс /app/modules/Uaflix
 COPY Unimay /app/modules/Unimay
 
 # Створення конфігурації
