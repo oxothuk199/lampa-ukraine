@@ -34,7 +34,7 @@ echo ""
 echo "🔧 Конфігурація:"
 echo "   Config file: /app/init.conf"
 echo "   Modules path: /app/modules"
-echo "   Listen port: 9118"
+echo "   Listen port: 80"
 
 # Перевірка конфігураційного файлу
 if [ -f "/app/init.conf" ]; then
