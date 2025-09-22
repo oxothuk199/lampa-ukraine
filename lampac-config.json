@@ -1,9 +1,69 @@
 {
   "ModSecurity": false,
+  "listenport": 9118,
   "serverproxy": {
-    "custom_modules_path": "/app/modules"
+    "enable": true,
+    "enablerewrite": true,
+    "custom_modules": true,
+    "modules_path": "/app/modules"
+  },
+  "sisi": {
+    "enable": true
   },
   "online": {
-    "custom_sources": true
+    "enable": true,
+    "custom_sources": [
+      {
+        "name": "AnimeON",
+        "displayName": "AnimeON 🇺🇦",
+        "description": "Україномовне аніме",
+        "host": "animeon.tv",
+        "path": "/app/modules/AnimeON",
+        "enabled": true,
+        "priority": 1,
+        "icon": "🇺🇦",
+        "type": "anime"
+      },
+      {
+        "name": "CikavaIdeya",
+        "displayName": "CikavaIdeya ✨",
+        "description": "Цікавий український контент",
+        "host": "cikavaIdeya.com",
+        "path": "/app/modules/CikavaIdeya",
+        "enabled": true,
+        "priority": 2,
+        "icon": "✨",
+        "type": "movies"
+      },
+      {
+        "name": "Uaflix",
+        "displayName": "Uaflix 🎥",
+        "description": "Український стрімінговий сервіс",
+        "host": "uaflix.tv",
+        "path": "/app/modules/Uaflix",
+        "enabled": true,
+        "priority": 3,
+        "icon": "🎥",
+        "type": "movies"
+      },
+      {
+        "name": "Unimay",
+        "displayName": "Unimay 📱",
+        "description": "Мобільна стрімінг платформа",
+        "host": "unimay.net",
+        "path": "/app/modules/Unimay",
+        "enabled": true,
+        "priority": 4,
+        "icon": "📱",
+        "type": "series"
+      }
+    ]
+  },
+  "tracks": {
+    "enable": true
+  },
+  "cors": {
+    "enable": true,
+    "origins": ["*"]
   }
 }
