@@ -23,6 +23,7 @@ RUN chmod -R 755 /app/modules
 
 # Експорт портів
 EXPOSE 9118
+EXPOSE 80
 
 # Запуск
 CMD ["/app/startup.sh"]
