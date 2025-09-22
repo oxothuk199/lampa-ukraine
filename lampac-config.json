@@ -1,6 +1,6 @@
 {
   "ModSecurity": false,
-  "listenport": 9118,
+  "listenport": 80,
   "serverproxy": {
     "enable": true,
     "enablerewrite": true,
